@@ -135,4 +135,9 @@ body {
   .info-section .btn:hover {
     background-color: #0056b3;
   }
-  
+  #success{
+    text-align: center;
+    background-color: #7a8c9f;
+    width: 100%
+    height: 100%
+  }
