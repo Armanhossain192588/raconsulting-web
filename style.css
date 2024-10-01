@@ -1,0 +1,138 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: white;
+    position: relative;
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 30px;
+    position: relative; /* Needed for dropdowns */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav ul li:hover a {
+    color: #007bff; /* Highlight color on hover */
+  }
+  
+  /* Dropdown Menu */
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  nav ul li ul li {
+    padding: 10px 20px;
+    white-space: nowrap;
+  }
+  
+  nav ul li ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  
+  nav ul li:hover ul {
+    display: block; /* Show dropdown on hover */
+  }
+  
+  nav ul li ul li:hover a {
+    color: #007bff; /* Highlight dropdown items */
+  }
+  
+  /* Free Evaluation Button */
+  nav .evaluation-button {
+    padding: 10px 20px;
+    border: 2px solid #333;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  
+  /* Info Section */
+  .info-section {
+    background-color: #f4f4f4;
+    padding: 80px 50px;
+    text-align: center;
+  }
+  
+  .info-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .info-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .info-section .btn {
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .info-section .btn:hover {
+    background-color: #0056b3;
+  }
+  

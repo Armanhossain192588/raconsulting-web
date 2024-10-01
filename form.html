@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Free Evaluation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1, h2, h3 {
+      color: #007bff;
+      text-align: center; /* Center the heading */
+    }
+
+    .intro-text {
+      text-align: center; /* Center the introduction */
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    form {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    form p {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .radio-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .radio-group input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Centered Title and Introduction -->
+  <h1>REQUEST A FREE EVALUATION OF YOUR PROFILE</h1>
+  <p class="intro-text">Requesting a free evaluation of your profile with RA Consulting is easy. Just complete the form below and click Let's Get Started.</p>
+
+  <form enctype="multipart/form-data">
+    <h2>Step 1: Tell Us About Yourself</h2>
+    <p>What High-Skilled Immigration issues are you interested in? (Check all that apply)</p>
+    <label><input type="checkbox" name="immigration" value="EB-1A"> EB-1A Green Card</label>
+    <label><input type="checkbox" name="immigration" value="EB-1B"> EB-1B Green Card</label>
+    <label><input type="checkbox" name="immigration" value="EB-2 NIW"> EB-2 NIW Green Card</label>
+    <label><input type="checkbox" name="immigration" value="O-1"> O-1 Visa</label>
+    <label><input type="checkbox" name="immigration" value="J-1"> J-1 Waiver Service</label>
+    <label><input type="checkbox" name="immigration" value="I-485"> Adjustment of Status (I-485)</label>
+    <label><input type="checkbox" name="immigration" value="RFE"> RFE Assistance</label>
+
+    <label for="salutation">Salutation</label>
+    <select id="salutation" name="salutation" required>
+      <option value="" disabled selected>Please Select</option>
+      <option value="Mr">Mr.</option>
+      <option value="Ms">Ms.</option>
+      <option value="Dr">Dr.</option>
+    </select>
+
+    <label for="firstName">First Name *</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Last Name *</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label for="phoneNumber">Phone Number *</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="countryOfBirth">What is your Country of Birth? *</label>
+    <select id="countryOfBirth" name="countryOfBirth" required>
+      <option value="" disabled selected>Please Select</option>
+      <option value="Afghanistan">Afghanistan</option>
+      <option value="Albania">Albania</option>
+      <option value="Algeria">Algeria</option>
+      <option value="Bangladesh">Bangladesh</option>
+      <option value="Canada">Canada</option>
+      <!-- Add more countries as needed -->
+    </select>
+
+    <p>Are you Married? *</p>
+    <div class="radio-group">
+      <input type="radio" id="marriedYes" name="maritalStatus" value="yes" required>
+      <label for="marriedYes">Yes</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="marriedNo" name="maritalStatus" value="no" required>
+      <label for="marriedNo">No</label>
+    </div>
+
+    <label for="currentUSStatus">What is your Current U.S. Immigration Status? *</label>
+    <select id="currentUSStatus" name="currentUSStatus" required>
+      <option value="" disabled selected>Please Select</option>
+      <option value="H-1B">H-1B</option>
+      <option value="F-1">F-1</option>
+      <option value="J-1">J-1</option>
+      <option value="None">None</option>
+      <!-- Add more options as needed -->
+    </select>
+
+    <label for="degreeEarned">Highest Degree Earned? *</label>
+    <select id="degreeEarned" name="degreeEarned" required>
+      <option value="" disabled selected>Please Select</option>
+      <option value="Bachelor">Bachelor's</option>
+      <option value="Master">Master's</option>
+      <option value="PhD">Ph.D.</option>
+    </select>
+
+    <label for="fieldOfStudy">What is your Industry or Field of Study? *</label>
+    <select id="fieldOfStudy" name="fieldOfStudy" required>
+      <option value="" disabled selected>Please Select</option>
+      <option value="Technology">Technology</option>
+      <option value="Healthcare">Healthcare</option>
+      <option value="Engineering">Engineering</option>
+      <!-- Add more fields as needed -->
+    </select>
+
+    <p>Do you want to apply for a visa or green card based on your achievements as a professional artist, athlete, or entertainer? *</p>
+    <div class="radio-group">
+      <input type="radio" id="artistYes" name="artist" value="yes">
+      <label for="artistYes">Yes</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="artistNo" name="artist" value="no">
+      <label for="artistNo">No</label>
+    </div>
+
+    <label for="employment">Are you currently employed? *</label>
+    <select id="employment" name="employment" required>
+      <option value="" disabled selected>Please Select</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <p>Have you authored any academic articles that have been cited? *</p>
+    <div class="radio-group">
+      <input type="radio" id="articlesYes" name="articles" value="yes">
+      <label for="articlesYes">Yes</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="articlesNo" name="articles" value="no">
+      <label for="articlesNo">No</label>
+    </div>
+
+    <p>Do you have a Google Scholar profile? *</p>
+    <div class="radio-group">
+      <input type="radio" id="scholarYes" name="scholar" value="yes">
+      <label for="scholarYes">Yes</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="scholarNo" name="scholar" value="no">
+      <label for="scholarNo">No</label>
+    </div>
+
+    <label for="publication">When was your last Publication Published?</label>
+    <input type="text" id="publication" name="publication">
+
+    <p>Do you have any experience judging the work of others (i.e., serving as a peer reviewer for journals or conferences)? *</p>
+    <div class="radio-group">
+      <input type="radio" id="reviewYes" name="review" value="yes">
+      <label for="reviewYes">Yes</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="reviewNo" name="review" value="no">
+      <label for="reviewNo">No</label>
+    </div>
+
+    <label for="additionalComments">If you'd like to share any additional comments about your background, your current situation, or your U.S. immigration goals, just let us know below:</label>
+    <textarea id="additionalComments" name="additionalComments"></textarea>
+
+    <p>How did you learn about Ellis Porter? *</p>
+    <div class="radio-group">
+      <input type="radio" id="google" name="source" value="Google">
+      <label for="google">Google</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="facebook" name="source" value="Facebook">
+      <label for="facebook">Facebook</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="linkedin" name="source" value="LinkedIn">
+      <label for="linkedin">LinkedIn</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="instagram" name="source" value="Instagram">
+      <label for="instagram">Instagram</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="telegram" name="source" value="Telegram">
+      <label for="telegram">Telegram</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="trackitt" name="source" value="Trackitt">
+      <label for="trackitt">Trackitt</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="avvo" name="source" value="Avvo">
+      <label for="avvo">Avvo</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="referral" name="source" value="Referral">
+      <label for="referral">Referral</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="other" name="source" value="Other">
+      <label for="other">Other:</label>
+      <input type="text" id="otherSource" name="otherSource">
+    </div>
+
+    <!-- Step 2: CV/Resume Upload -->
+    <h2>Step 2: Send us your CV or Resume</h2>
+    <p>Please upload a detailed and up-to-date English version of your CV or Resume *</p>
+    <input type="file" name="cv" accept=".pdf,.doc,.docx" required>
+    
+    <!-- Step 3: Submission -->
+    <h2>Step 3: Submit your Request</h2>
+    <p>Click the Button Below to submit Your Request for Free Profile Evaluation</p>
+    <p>An attorney from RA Consulting's High-Skilled Immigration Services Team will contact you within 24 hours to discuss your profile.</p>
+    <p>We look forward to speaking with you!</p>
+
+    <button type="submit">LET'S GET STARTED</button>
+  </form>
+
+</body>
+</html>
