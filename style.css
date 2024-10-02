@@ -141,4 +141,9 @@ body {
     width: 100%
     height: 100%
   }
-  
+  footer{
+    background-color: rgb(89, 81, 81);
+  }
+  #info-section{
+    background-color: rgb(104, 85, 85);
+  }
