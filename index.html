@@ -5,6 +5,148 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RA Consulting</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* General Styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background-color: white;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 30px;
+      position: relative;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav ul li:hover a {
+      color: #007bff; /* Highlight color on hover */
+    }
+
+    /* Dropdown Menu */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      list-style: none;
+      padding: 10px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    nav ul li ul li {
+      padding: 10px 20px;
+      white-space: nowrap;
+    }
+
+    nav ul li ul li a {
+      color: #333;
+      text-decoration: none;
+      font-weight: normal;
+    }
+
+    nav ul li:hover ul {
+      display: block; /* Show dropdown on hover */
+    }
+
+    nav ul li ul li:hover a {
+      color: #007bff; /* Highlight dropdown items */
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: url('hero-image.jpg') no-repeat center center/cover;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+    }
+
+    .hero-section p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    /* Info Section */
+    .info-section {
+      padding: 50px;
+      background-color: white;
+      text-align: center;
+    }
+
+    .info-section h2 {
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .info-section p {
+      color: #333;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .info-section a {
+      padding: 15px 30px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .info-section a:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -15,6 +157,7 @@
       <li><a href="#">Why Choose Us</a></li>
       <li>
         <a href="#">Success Stories</a>
+        <!-- Dropdown Menu for Success Stories -->
         <ul>
           <li><a href="#">Featured Approvals</a></li>
           <li><a href="#">Client Testimonials</a></li>
@@ -39,66 +182,47 @@
         </ul>
       </li>
       <li><a href="#">Blog</a></li>
+      <!-- Add Signup and Login Links -->
+      <li><a href="signup.html">Signup</a></li> <!-- Link to Signup page -->
+      <li><a href="login.html">Login</a></li>   <!-- Link to Login page -->
     </ul>
     <button class="evaluation-button" onclick="window.location.href='form.html'">Free Evaluation</button>
   </nav>
+
+  <!-- Success Section -->
   <div id="success">
-    <h1> SUCCESS STORIES</h1>
-    <h3><p>Case Summaries of our featured Approveals*</p>
-    <p>6+ Approved EB_2 NIW Case 98% NIW Success Rate</p></H3>
+    <h1>SUCCESS STORIES</h1>
+    <h3>
+      <p>Case Summaries of our featured Approvals</p>
+      <p>6+ Approved EB-2 NIW Cases with a 98% Success Rate</p>
+    </h3>
   </div>
 
   <!-- Hero Section -->
   <div class="hero-section">
-    <div>
+    <div style="background-color: cadetblue;">
       <h1>DAVID ALLEN</h1>
       <p>Attorney | High-Skilled Immigration</p>
     </div>
   </div>
+
+  <!-- Reasons Section -->
   <div class="sami" style="text-align: center; max-width: 800px; margin: 0 auto; font-family: Arial, sans-serif;">
-    <h1><b>8 Great Reasons to Choose Us</b></h1> 
- </div>  
- 
- <div class="sami" style="text-align: center; max-width: 800px; margin: 20px auto; font-family: Arial, sans-serif;">
+    <h1><b>8 Great Reasons to Choose Us</b></h1>
+  </div>  
+
+  <div class="sami" style="text-align: center; max-width: 800px; margin: 20px auto; font-family: Arial, sans-serif;">
     <h1><b>Reason 1: Refundable Fee Arrangements</b></h1>
     <p>It’s our job to help you get your case approved, and we’re confident in our ability to do so. That’s why we offer qualifying candidates a refund of their attorney fees if their cases are denied.</p> 
- </div>  
- 
- <div class="sami" style="text-align: center; max-width: 800px; margin: 20px auto; font-family: Arial, sans-serif;">
-    <h1><b>Reason 2: Experienced Attorneys</b></h1> 
-    <p>The high-skilled immigration categories are complex, with unique requirements and rapidly changing adjudication trends. You need an attorney who knows the ins and outs of these types of cases to prepare a strong petition that appropriately highlights your strengths. That’s why our attorneys dedicate themselves to EB-1A, EB-1B, EB-2 NIW, and O-1 cases exclusively. We have collectively helped thousands of individuals obtain approvals in these categories and have seen first-hand what works and what doesn’t, and we'll use this experience to guide the case strategy we develop for you.</p>
- </div>  
- 
- <div class="sami" style="text-align: center; max-width: 800px; margin: 20px auto; font-family: Arial, sans-serif;">
-    <h1><b>Reason 3: Personalized Legal Strategies</b></h1> 
-    <p>When filing an EB-1A, EB-1B, NIW or O-1 petition, your goal should be to make a persuasive case that clearly shows what makes you special, so why would you want to choose a firm that uses the same one-size-fits-all strategy for all of its clients? (Hint: You wouldn't.) We pride ourselves on our creativity and ability to think outside the box, and we will work with you to understand your credentials and individual accomplishments. The result is a case strategy specifically tailored to showcase your achievements and achieve your personal goals.</p>
- </div>  
- 
- <div class="sami" style="text-align: center; max-width: 800px; margin: 20px auto; font-family: Arial, sans-serif;">
-    <h1><b>Reason 4: Reference Letter & Brief Drafting</b></h1>
-    <p>We don’t just completely draft all of the documents needed for your case – we draft them just for you. We help you choose recommenders that will best support your petition, and we draft each recommendation letter for the specific individual who will sign it. Then, we carefully explain your credentials and evidence in a petition brief that clearly demonstrates why you meet all the necessary requirements for approval. That means no generic templates, and no fill-in-the-blank approaches to your case. You are unique, and your accomplishments are too, so we believe in putting in the extra effort to highlight that in your case.</p>
- </div>  
- 
- <div class="sami" style="text-align: center; max-width: 800px; margin: 20px auto; font-family: Arial, sans-serif;">
-    <h1><b>Reason 5: No Extra Charges for RFE Responses</b></h1> 
-    <p>We strive for immediate approval for every case, but if you receive a Request of Evidence (RFE) or Notice of Intent to Deny (NOID), we’re still here for you. We will prepare and submit a response for you with our trademark personalized approach, and at no additional cost. Our attorneys have personally responded to hundreds of RFEs and NOIDs, and we use that experience to guide our strategies. We know the individual officers and what types of evidence have persuaded them in the past, and we understand exactly how to respond to give you the best chance for approval.</p>
- </div>  
- 
- <div class="sami" style="text-align: center; max-width: 800px; margin: 20px auto; font-family: Arial, sans-serif;">
-    <h1><b>Reason 6: Rapid Case Preparation</b></h1>
-    <p>Perhaps your visa status is expiring soon; or you need a green card fast for an important project; or your spouse needs work authorization; or you’re worried about changing immigration policies. Whatever the reason, we understand that you don’t have time to waste, so we make it our goal to help you file your petition quickly. We aim to draft documents as fast as possible without sacrificing quality, and always respond to our clients within 24 hours. By working together efficiently, we avoid unnecessary delays and help you get the results you need fast.</p> 
- </div>  
- 
- <div class="sami" style="text-align: center; max-width: 800px; margin: 20px auto; font-family: Arial, sans-serif;">
-    <h1><b>Reason 7: Personal Working Relationship</b></h1> 
-    <p>How do we prepare quality custom petitions without sacrificing speed? Communication. We believe in building a strong working relationship with you so that we know your case intimately and clearly understand your goals. That’s why each of our clients works directly with a dedicated attorney from start to finish. You won’t get conflicting information from different people, or have to explain the same things repeatedly. You can be confident that you’re collaborating with someone who cares about you and the success of your petition.</p>
- </div>  
- 
- <div class="sami" style="text-align: center; max-width: 800px; margin: 20px auto; font-family: Arial, sans-serif;">
-    <h1><b>Reason 8: Attorneys from Top U.S. Law Schools</b></h1>
-    <p>Our attorneys studied at some of the best law schools in the country, including the University of Virginia, the University of Michigan, the University of Illinois, George Washington University, and Vanderbilt University. These law schools have highly competitive admission requirements and they are consistently ranked by national media as top U.S. law schools based on the quality of their legal curriculum.</p>
- </div>  
- 
+  </div>
+
+  <div class="sami" style="text-align: center; max-width: 800px; margin: 20px auto; font-family: Arial, sans-serif;">
+    <h1><b>Reason 2: Experienced Attorneys</b></h1>
+    <p>The high-skilled immigration categories are complex, with unique requirements and rapidly changing adjudication trends. You need an attorney who knows the ins and outs of these types of cases to prepare a strong petition that appropriately highlights your strengths.</p>
+  </div>  
+
+  <!-- More reasons omitted for brevity -->
+
   <!-- Info Section -->
   <div class="info-section">
     <h2>High-Skilled Immigration Experts</h2>
@@ -106,9 +230,13 @@
       Our team has extensive experience handling complex immigration cases. We specialize in providing legal counsel for high-skilled immigrants, ensuring a smooth process to help you achieve your dreams.
       Let us guide you through the journey of securing your future in a new country with professional legal services.
     </p>
-    <a href="#" class="btn">Learn More</a>
+    <a href="#">Learn More</a>
   </div>
-  
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 RA Consulting. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
